@@ -21,7 +21,7 @@ class SplashScreenViewController: UIViewController{
         
         // Create our timer and start it instantly
         // We want no interaction from the user necessary on this screen so we must begin things instantly
-        segueTimer = NSTimer.scheduledTimerWithTimeInterval(timer_interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
+        segueTimer = NSTimer.scheduledTimerWithTimeInterval(timer_interval, target: self, selector: #selector(timerDidFire), userInfo: nil, repeats: false)
         
         
         super.viewDidLoad()
