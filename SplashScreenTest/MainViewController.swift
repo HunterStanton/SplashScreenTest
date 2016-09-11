@@ -12,5 +12,8 @@ class MainViewController: UIViewController{
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        
+        // Emojis in code, lol
+        print("Main view reached 🎉")
     }
 }
