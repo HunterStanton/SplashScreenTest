@@ -29,6 +29,9 @@
                             <constraint firstItem="DqW-1w-9Xc" firstAttribute="centerX" secondItem="EbL-2v-c4G" secondAttribute="centerX" id="LP8-9f-5Ka"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="DEI-hv-0C5" kind="presentation" identifier="EndSplashSegue" modalTransitionStyle="crossDissolve" id="HXv-k7-594"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KKy-Px-vel" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,7 +40,7 @@
         <!--Main View-->
         <scene sceneID="lJC-HP-DGI">
             <objects>
-                <viewController title="Main View" id="DEI-hv-0C5" sceneMemberID="viewController">
+                <viewController title="Main View" id="DEI-hv-0C5" customClass="MainViewController" customModule="SplashScreenTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RlV-4B-DXl"/>
                         <viewControllerLayoutGuide type="bottom" id="7eu-mG-wGn"/>
@@ -45,7 +48,19 @@
                     <view key="view" contentMode="scaleToFill" id="LNN-fI-QdN">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Splash Screen Over 🎉" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Adx-lu-znS">
+                                <rect key="frame" x="212" y="289" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Adx-lu-znS" firstAttribute="centerY" secondItem="LNN-fI-QdN" secondAttribute="centerY" id="DD6-lp-DY3"/>
+                            <constraint firstItem="Adx-lu-znS" firstAttribute="centerX" secondItem="LNN-fI-QdN" secondAttribute="centerX" id="TIS-2r-epv"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yqz-dx-bmu" userLabel="First Responder" sceneMemberID="firstResponder"/>

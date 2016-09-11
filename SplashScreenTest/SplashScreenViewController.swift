@@ -27,6 +27,10 @@ class SplashScreenViewController: UIViewController{
     
     func timerDidFire()
     {
-        print("timer fired")
+        // Print so that we know it worked right
+        print("timer fired, moving to new view")
+        
+        // Move to it
+        self.performSegueWithIdentifier("EndSplashSegue", sender: self)
     }
 }
