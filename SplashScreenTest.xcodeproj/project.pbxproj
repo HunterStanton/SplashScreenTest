@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C33C90E81D861DD4008EA17D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33C90E71D861DD4008EA17D /* AppDelegate.swift */; };
-		C33C90EA1D861DD4008EA17D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33C90E91D861DD4008EA17D /* ViewController.swift */; };
 		C33C90ED1D861DD4008EA17D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33C90EB1D861DD4008EA17D /* Main.storyboard */; };
 		C33C90EF1D861DD4008EA17D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C33C90EE1D861DD4008EA17D /* Assets.xcassets */; };
 		C33C90F21D861DD4008EA17D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C33C90F01D861DD4008EA17D /* LaunchScreen.storyboard */; };
+		C33C90FA1D861E17008EA17D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C33C90F91D861E17008EA17D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C33C90E41D861DD4008EA17D /* SplashScreenTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SplashScreenTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C33C90E71D861DD4008EA17D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C33C90E91D861DD4008EA17D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C33C90EC1D861DD4008EA17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C33C90EE1D861DD4008EA17D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C33C90F11D861DD4008EA17D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C33C90F31D861DD4008EA17D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C33C90F91D861E17008EA17D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +38,7 @@
 		C33C90DB1D861DD4008EA17D = {
 			isa = PBXGroup;
 			children = (
+				C33C90F91D861E17008EA17D /* README.md */,
 				C33C90E61D861DD4008EA17D /* SplashScreenTest */,
 				C33C90E51D861DD4008EA17D /* Products */,
 			);
@@ -55,7 +56,6 @@
 			isa = PBXGroup;
 			children = (
 				C33C90E71D861DD4008EA17D /* AppDelegate.swift */,
-				C33C90E91D861DD4008EA17D /* ViewController.swift */,
 				C33C90EB1D861DD4008EA17D /* Main.storyboard */,
 				C33C90EE1D861DD4008EA17D /* Assets.xcassets */,
 				C33C90F01D861DD4008EA17D /* LaunchScreen.storyboard */,
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C33C90EA1D861DD4008EA17D /* ViewController.swift in Sources */,
+				C33C90FA1D861E17008EA17D /* README.md in Sources */,
 				C33C90E81D861DD4008EA17D /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,6 +252,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplashScreenTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HunterStanton.SplashScreenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -263,6 +264,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SplashScreenTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HunterStanton.SplashScreenTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
