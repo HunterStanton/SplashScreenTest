@@ -10,6 +10,8 @@ import UIKit
 
 class SplashScreenViewController: UIViewController{
     
+    var segueTimer: NSTimer!
+    
     override func viewDidLoad() {
         // We'll use viewDidLoad to setup our timer and move to the new view whenever the timer is up
         // Currently the time is set to Pi seconds but can be changed here
@@ -19,7 +21,7 @@ class SplashScreenViewController: UIViewController{
         
         // Create our timer and start it instantly
         // We want no interaction from the user necessary on this screen so we must begin things instantly
-        let timer: NSTimer = NSTimer.scheduledTimerWithTimeInterval(timer_interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
+        segueTimer = NSTimer.scheduledTimerWithTimeInterval(timer_interval, target: self, selector: Selector("timerDidFire"), userInfo: nil, repeats: false)
         
         
         super.viewDidLoad()
@@ -29,6 +31,9 @@ class SplashScreenViewController: UIViewController{
     {
         // Print so that we know it worked right
         print("timer fired, moving to new view")
+        
+        // Invalidate the timer because it is no longer needed
+        segueTimer.invalidate()
         
         // Move to it
         self.performSegueWithIdentifier("EndSplashSegue", sender: self)
