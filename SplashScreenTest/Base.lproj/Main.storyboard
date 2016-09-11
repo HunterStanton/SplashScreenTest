@@ -7,7 +7,7 @@
         <!--Splash Screen-->
         <scene sceneID="ZRl-U0-mXQ">
             <objects>
-                <viewController title="Splash Screen" id="JWH-vJ-WkT" sceneMemberID="viewController">
+                <viewController title="Splash Screen" id="JWH-vJ-WkT" customClass="SplashScreenViewController" customModule="SplashScreenTest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yph-Ky-0rT"/>
                         <viewControllerLayoutGuide type="bottom" id="lKO-nD-0kj"/>
