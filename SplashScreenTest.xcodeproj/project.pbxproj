@@ -41,6 +41,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C1A48431E4B474E0090D1C2 /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				C33C90E71D861DD4008EA17D /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		7C1A48441E4B47550090D1C2 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				C33C90EB1D861DD4008EA17D /* Main.storyboard */,
+				C33C90F01D861DD4008EA17D /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		7C1A48451E4B47630090D1C2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C33C90EE1D861DD4008EA17D /* Assets.xcassets */,
+				C33C90F31D861DD4008EA17D /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		C33C90DB1D861DD4008EA17D = {
 			isa = PBXGroup;
 			children = (
@@ -62,12 +88,10 @@
 		C33C90E61D861DD4008EA17D /* SplashScreenTest */ = {
 			isa = PBXGroup;
 			children = (
+				7C1A48451E4B47630090D1C2 /* Resources */,
+				7C1A48441E4B47550090D1C2 /* Storyboards */,
+				7C1A48431E4B474E0090D1C2 /* Delegates */,
 				C33C90FB1D861F52008EA17D /* View Controllers */,
-				C33C90E71D861DD4008EA17D /* AppDelegate.swift */,
-				C33C90EB1D861DD4008EA17D /* Main.storyboard */,
-				C33C90EE1D861DD4008EA17D /* Assets.xcassets */,
-				C33C90F01D861DD4008EA17D /* LaunchScreen.storyboard */,
-				C33C90F31D861DD4008EA17D /* Info.plist */,
 			);
 			path = SplashScreenTest;
 			sourceTree = "<group>";

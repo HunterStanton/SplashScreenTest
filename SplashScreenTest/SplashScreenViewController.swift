@@ -27,6 +27,8 @@ class SplashScreenViewController: UIViewController{
         super.viewDidLoad()
     }
     
+    
+    /// The function executed when the timer reaches the end of its schedule.
     func timerDidFire()
     {
         // Print so that we know it worked right
